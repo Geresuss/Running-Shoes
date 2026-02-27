@@ -1,0 +1,224 @@
+/* ===============================
+   GLOBAL
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f8;
+  color: #111;
+  transition: 0.3s ease;
+}
+
+/* DARK MODE */
+.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+.nav {
+  background: #111;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Clickable logo */
+.logo-link {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* Navigation links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* Nav links */
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+
+/* ===============================
+   BUTTONS
+================================= */
+
+button,
+.btn {
+  background: #4cafef;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover,
+.btn:hover {
+  background: #3b9bd9;
+}
+
+/* Dark mode button tweak */
+.dark button,
+.dark .btn {
+  background: #2196f3;
+}
+
+/* ===============================
+   USER LABEL
+================================= */
+
+.user {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* ===============================
+   PAGE CONTAINER
+================================= */
+
+.container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ===============================
+   CARDS
+================================= */
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Dark mode card */
+.dark .card {
+  background: #1e1e1e;
+  box-shadow: none;
+}
+
+/* ===============================
+   TEXT STYLING
+================================= */
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+}
+
+.dark .subtitle {
+  color: #ccc;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+
+/* ===============================
+   INPUTS / FORMS
+================================= */
+
+input,
+select {
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+}
+
+.dark input,
+.dark select {
+  background: #2a2a2a;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* ===============================
+   QUIZ RESULT
+================================= */
+
+h2 {
+  margin-top: 20px;
+}
+
+/* ===============================
+   ADMIN LIST
+================================= */
+
+ul {
+  margin-top: 15px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .container {
+    padding: 25px 15px;
+  }
+}
